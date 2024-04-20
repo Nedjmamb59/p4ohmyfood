@@ -1121,7 +1121,7 @@ main {
   box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.25);
 }
 
-.order-button-wrapper {
+.order-button-strip {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -1567,7 +1567,7 @@ main {
   box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.25);
 }
 
-.order-button-wrapper {
+.order-button-strip {
   width: 100%;
   display: flex;
   justify-content: center;
