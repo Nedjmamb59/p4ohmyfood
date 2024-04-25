@@ -50,22 +50,22 @@ input {
   }
 }
 .entrees {
-  animation: FadeIn 1.2s;
-  animation-delay: 1.6s;
+  animation: FadeIn auto;
+  animation-delay: auto;
   transform: scale(0);
   animation-fill-mode: forwards;
 }
 
 .plats {
-  animation: FadeIn 1.2s;
-  animation-delay: 2s;
+  animation: FadeIn auto;
+  animation-delay: auto;
   transform: scale(0);
   animation-fill-mode: forwards;
 }
 
 .desserts {
-  animation: FadeIn 1.2s;
-  animation-delay: 2.4s;
+  animation: FadeIn auto;
+  animation-delay: auto;
   transform: scale(0);
   animation-fill-mode: forwards;
 }
