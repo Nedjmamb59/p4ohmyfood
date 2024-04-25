@@ -15,12 +15,9 @@ label {
   cursor: pointer;
 }
 
-.footer-txt {
-  transition: color 0.3s ease-in-out;
-}
 
 .footer-txt:hover {
-  color: transparent;
+  color: white;
   -webkit-background-clip: text;
   background-clip: text;
 }
