@@ -1,41 +1,42 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--compatibilité  navigateur-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
+
     <title>OhMyFood - Commande de Repas en Ligne</title>
+
+    <link rel="canonical" href="https://www.ohmyfood.com">
+   
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
-    <div class="loader spinner">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="spinner-container">
+        <div class="spinner">
+        </div>
     </div>
-        
-    <!--HEADER-->
+
     <header class="header">
-        <div class="header-main">
+        <div class="header-container">
             <div class="header-logo">
                 <a href="#" title="Retour à la page d'accueil">
-                    <div class="header-logo-main">
-                        <img src="asset/images/logo/ohmyfood.png" alt="OhMyFood - Home">
+                    <div class="header-logo-container">
+                        <img src="asset/images/logo/ohmyfood.png" alt="OhMyFood - Home" width="398" height="68">
                     </div>
                 </a>
             </div>
-            <div class="header-location"> <!--recherche de ville-->
+            <div class="header-location">
                 <i class="fa-solid fa-location-dot"></i>
                 <input type="text" placeholder="Paris, Belleville">
             </div>
@@ -46,7 +47,7 @@
         <div class="main-strip">
             <section class="search">
                 <div class="search-strip">
-                    <div class="search-hero">
+                    <div class="search-heading">
                         <h1>Réservez le menu qui vous convient</h1>
                     </div>
                     <div class="search-discover">
@@ -59,8 +60,8 @@
             </section>
 
             <section class="fonctioning">
-                <div class="fonctioning-wrapper">
-                    <div class="fonctioning-title">
+                <div class="fonctioning-strip">
+                    <div class="fonctionnement-title">
                         <h1>Fonctionnement</h1>
                     </div>
                     <div class="fonctioning-options">
@@ -92,8 +93,9 @@
                         <article class="restaurants-card">
                             <a href="lapalettedugout.html" title="La palette du goût">
                                 <figure>
-                                    <img src="asset/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût à Ménilmontant">
-                                    <figcaption>Nouveau</figcaption> <!--legende nouveauté-->
+                                    <img src="asset/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" width="4402"
+                                        height="2935" alt="La palette du goût à Ménilmontant">
+                                    <figcaption>Nouveau</figcaption>
                                 </figure>
                             </a>
                             <div class="restaurants-card-content">
@@ -122,8 +124,9 @@
                         <article class="restaurants-card">
                             <a href="noteenchantee.html" title="La note enchantée">
                                 <figure>
-                                    <img src="asset/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée à Charonne">
-                                    <figcaption>Nouveau</figcaption> <!--legende nouveauté-->
+                                    <img src="asset/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" width="3024"
+                                        height="3780" alt="La note enchantée à Charonne">
+                                    <figcaption>Nouveau</figcaption>
                                 </figure>
                             </a>
                             <div class="restaurants-card-content">
@@ -152,7 +155,8 @@
                         <article class="restaurants-card">
                             <a href="AlaFrancaise.html" title="À la française">
                                 <figure>
-                                    <img src="asset/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française à Cité Rouge">
+                                    <img src="asset/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" width="3936"
+                                        height="2624" alt="À la française à Cité Rouge">
                                 </figure>
                             </a>
                             <div class="restaurants-card-content">
@@ -164,7 +168,7 @@
                                     </div>
                                 </a>
                                 <div class="restaurants-card-favorite">
-                                    <input type="checkbox" id="alafrancaise-favorite"> <!--favoris-->
+                                    <input type="checkbox" id="alafrancaise-favorite">
                                     <label for="alafrancaise-favorite" title="Ajoutez aux favoris"
                                         class="favorite-restaurants">
                                         <i class="fa-regular fa-heart heart page-heart unfilled-heart"
@@ -183,7 +187,7 @@
                                 <div class="restaurants-card-image">
                                     <figure>
                                         <img src="asset/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                                          alt="Le délice des sens à Folie-Méricourt">
+                                            width="5043" height="3456" alt="Le délice des sens à Folie-Méricourt">
                                     </figure>
                                 </div>
                             </a>
@@ -196,7 +200,7 @@
                                     </div>
                                 </a>
                                 <div class="restaurants-card-favorite">
-                                    <input type="checkbox" id="ledelice-favorite"> <!--avoris-->
+                                    <input type="checkbox" id="ledelice-favorite">
                                     <label for="ledelice-favorite" title="Ajoutez aux favoris"
                                         class="favorite-restaurants">
                                         <i class="fa-regular fa-heart heart page-heart unfilled-heart"
@@ -247,13 +251,11 @@
                         </a>
                     </div>
                     <div class="footer-nav-item">
-                        <a href="mailto:ohmyfood@contact.fr" title="Contact">
+                        <a href="#" title="Contact">
                             <p class="footer-txt">Contact</p>
-        </footer>
-    <!-- FOOTER -->
                         </a>
                     </div>
-               
+                </nav>
             </div>
         </div>
     </footer>
