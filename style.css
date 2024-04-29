@@ -616,7 +616,7 @@ figcaption {
 
 @media (min-width: 900px) {
   body {
-    max-width: 1440px;
+    max-width: 1800px;
     margin: 0 auto;
   }
   .search {
@@ -736,7 +736,7 @@ figcaption {
     width: 137.58px;
   }
 }
-@media (min-width: 901px) and (max-width: 1245px) {
+@media (min-width: 900px) and (max-width: 1800px) {
   .fonctioning {
     padding-left: 4%;
     padding-right: 4%;
@@ -1060,7 +1060,7 @@ main {
 
 @media (min-width: 900px) {
   body {
-    max-width: 1440px;
+    max-width: 1800px;
     margin: 0 auto;
   }
   .page-header {
