@@ -1,3 +1,94 @@
+.loader {
+	background: white;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+	opacity: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: loader 0.5s ease-in-out 2.5s forwards;
+}
+
+.loader__spinner {
+	border: 20px solid transparent;
+	border-top: 20px solid #9356dc;
+	border-right: 20px solid #9356dc;
+	border-bottom: 20px solid #FF79DA ;
+	width: 220px;
+	height: 220px;
+	border-radius: 100%;
+	animation: loader__spinner 1s ease 3;
+	position: absolute;
+}
+
+.spinner__arrow {
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-right: 20px solid #9356dc;
+	position: relative;
+	top: 170px;
+	left: 10px;
+	transform: rotate(45deg);
+}
+
+.loader__extern-frame {
+	width: 260px;
+	height: 260px;
+	border: 20px solid #99E2D0;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.loader__intern-frame {
+	width: 180px;
+	height: 180px;
+	border: 20px solid #99E2D0;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	align-self: center;
+	margin: 0;
+	width: 162px;
+	height: auto;
+}
+
+@keyframes loader {
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+@keyframes loader__spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 .icon-gray {
   color: #7e7e7e;
 }
@@ -511,9 +602,11 @@ figcaption {
 }
 
 .restaurants {
-  padding-left: 17px;
-  padding-right: 18px;
+  padding-left: 180px;
+  padding-right: 180px;
   background-color: #f6f6f6;
+  width : 100%; 
+min-width : 600px;
 }
 
 .restaurants .heart {
