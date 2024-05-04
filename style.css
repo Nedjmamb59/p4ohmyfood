@@ -1,3 +1,5 @@
+/* default font */
+
 @import"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";@import"https://fonts.googleapis.com/css2?family=Shrikhand&display=swap";* {
   font-family: "Roboto",sans-serif;
   text-rendering: optimizeLegibility
@@ -91,6 +93,9 @@ body {
   }
 }
 
+
+/*HEADER*/
+
 .header-container {
   display: flex;
   justify-content: center;
@@ -149,6 +154,7 @@ body {
       margin: auto
   }
 }
+/*LOCATION*/
 
 .location {
   display: flex;
@@ -260,6 +266,8 @@ body {
   transition: opacity 250ms
 }
 
+/* fUNCTIONING*/
+
 .functioning h3 {
   font-size: 24px;
   font-weight: 700
@@ -338,6 +346,9 @@ body {
       width: 100%
   }
 }
+
+
+/*RESTAURANTS*/
 
 .restaurants {
   background: #f6f6f6;
@@ -432,6 +443,8 @@ body {
   }
 }
 
+/* Animation coeur favoris*/
+
 .add__heart {
   position: relative;
   border: none;
@@ -498,6 +511,8 @@ body {
 #gradient__checkbox8:checked+.add__heart .heart__gradient {
   transform: translate(-50%, -50%) scale(1)
 }
+
+/* Section Menu*/
 
 .banner__menu {
   position: relative;
@@ -572,6 +587,8 @@ body {
   opacity: 0;
   animation-fill-mode: forwards
 }
+
+/*Animation Menu */
 
 .cards-menu-item--1 {
   animation-delay: 300ms
@@ -685,6 +702,8 @@ body {
   border-bottom-right-radius: 15px
 }
 
+/* Animation check menu */
+
 .icon-validation {
   height: 22px;
   width: 22px;
@@ -714,6 +733,9 @@ body {
       margin: auto
   }
 }
+
+
+/* FOOTER */
 
 .footer {
   background: #353535;
