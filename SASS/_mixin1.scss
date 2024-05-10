@@ -1,0 +1,9 @@
+// Mixins
+@mixin flex-center {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+@mixin gradient-background($start-color, $end-color) {
+background: linear-gradient(356deg, $start-color -11.44%, $end-color 123.93%);
+}

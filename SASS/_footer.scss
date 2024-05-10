@@ -1,0 +1,65 @@
+* FOOTER */  
+
+.footer {
+background: #353535;
+height: 186px;
+padding-top: 25px;
+box-sizing: border-box;
+}
+.footer h4 {
+font-family: "Shrikhand", cursive;
+font-size: 19px;
+font-weight: 400;
+color: #fff;
+margin: 0;
+}
+.footer-contact {
+list-style: none;
+display: flex;
+flex-direction: column;
+padding: 0;
+margin-bottom: 0;
+margin-top: 10px;
+gap: 8px;
+}
+.footer-contact li:nth-child(1) {
+margin-right: 8px;
+}
+.footer-contact li:nth-child(1),
+.footer-contact li:nth-child(2) {
+font-weight: 500;
+}
+.footer-contact li:nth-child(3),
+.footer-contact li:nth-child(4) {
+font-weight: 400;
+}
+.footer-contact a {
+text-decoration: none;
+color: #fff;
+}
+.footer-contact a svg {
+fill: #fff;
+width: 14.5px;
+height: 13px;
+margin-right: 8px;
+}
+@media (min-width: 1024px) {
+.footer {
+display: flex;
+flex-direction: row-reverse;
+align-items: flex-end;
+height: 114px;
+}
+.footer h4 {
+margin: 0 60px 10px 60px;
+}
+.footer-contact {
+flex-direction: row;
+margin-top: 0;
+align-items: center;
+margin-bottom: 14px;
+}
+.footer-contact li:nth-child(2) {
+margin-right: 30px;
+}
+}

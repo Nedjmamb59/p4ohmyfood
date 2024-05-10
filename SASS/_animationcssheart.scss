@@ -1,0 +1,42 @@
+// Animation coeur favoris
+.add__heart {
+    position: relative;
+    border: none;
+    background: none;
+    cursor: pointer;
+    height: 28px;
+    width: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .heart__outline {
+    fill: #fff;
+    stroke: #000;
+    stroke-width: 1;
+    }
+    .heart__gradient {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 1s ease-in-out;
+    fill: url(#heart__gradient);
+    stroke: url(#heart__gradient);
+    }
+    .gradient__checkbox {
+    position: absolute;
+    visibility: hidden;
+    }
+    #gradient__checkbox1:checked + .card .add__heart .heart__gradient,
+    #gradient__checkbox5:checked + .add__heart .heart__gradient,
+    #gradient__checkbox2:checked + .card .add__heart .heart__gradient,
+    #gradient__checkbox6:checked + .add__heart .heart__gradient,
+    #gradient__checkbox3:checked + .card .add__heart .heart__gradient,
+    #gradient__checkbox7:checked + .add__heart .heart__gradient,
+    #gradient__checkbox4:checked + .card .add__heart .heart__gradient,
+    #gradient__checkbox8:checked + .add__heart .heart__gradient {
+    transform: translate(-50%, -50%) scale(1);
+    }

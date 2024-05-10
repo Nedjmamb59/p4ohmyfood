@@ -1,0 +1,204 @@
+// Section Menu
+.banner__menu {
+position: relative;
+overflow: hidden;
+}
+.banner__menu img {
+height: 275px;
+width: 100%;
+object-fit: cover;
+object-position: center;
+margin-bottom: -20px;
+}
+@media (min-width: 595px) {
+.banner__menu img {
+height: 383px;
+max-height: 383px;
+}
+}
+@media (min-width: 1024px) {
+.banner__menu img {
+object-position: 50% 61%;
+}
+}
+.menu {
+margin-top: -34px;
+border-radius: 32px 32px 0 0;
+background: $background-color;
+z-index: 1;
+position: relative;
+padding-bottom: 40px;
+}
+.menu .section__title {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-right: 20px;
+}
+.menu .section__title h2 {
+font-weight: 400;
+font-family: "Shrikhand", cursive;
+font-size: 28px;
+}
+.menu .starters__section,
+.menu .dishes__section,
+.menu .desserts__section {
+margin-bottom: 40px;
+}
+.menu .starters__section h3,
+.menu .dishes__section h3,
+.menu .desserts__section h3 {
+font-weight: 300;
+font-size: 16px;
+margin-bottom: 0;
+}
+.menu .starters__section hr,
+.menu .dishes__section hr,
+.menu .desserts__section hr {
+width: 40px;
+height: 3px;
+width: 40px;
+height: 3px;
+background: #99e2d0;
+margin-top: 5px;
+margin-left: 0;
+margin-bottom: 15px;
+border: none;
+border-bottom: 0.5px solid #99e2d0; // Ajoute une bordure verte en bas
+}
+// Correct également, si vous préférez utiliser un tiret
+tertiary-color {
+margin-top: 5px;
+margin-left: 0;
+margin-bottom: 15px;
+border: none;
+}
+.cards-menu-item {
+animation: cards-menu-item 810ms cubic-bezier(0.1, 0.9, 0.1, 1);
+opacity: 0;
+animation-fill-mode: forwards;
+}
+// Animation Menu
+.cards-menu-item--1 {
+animation-delay: 300ms;
+}
+.cards-menu-item--2 {
+animation-delay: 600ms;
+}
+.cards-menu-item--3 {
+animation-delay: 900ms;
+}
+.cards-menu-item--4 {
+animation-delay: 1200ms;
+}
+.cards-menu-item--5 {
+animation-delay: 1500ms;
+}
+.cards-menu-item--6 {
+animation-delay: 1800ms;
+}
+.cards-menu-item--7 {
+animation-delay: 2100ms;
+}
+.cards-menu-item--8 {
+animation-delay: 2400ms;
+}
+.cards-menu-item--9 {
+animation-delay: 2700ms;
+}
+.cards-menu-item--10 {
+animation-delay: 3000ms;
+}
+.cards-menu .card {
+border-radius: 15px;
+box-shadow: 0px 4px 15px 0px $shadow-color;
+display: flex;
+align-items: flex-end;
+padding: 15px;
+margin-bottom: 12px;
+overflow: hidden;
+cursor: pointer;
+}
+.cards-menu .card:hover .card-validation {
+margin-right: -15px;
+}
+@keyframes cards-menu-item {
+0% {
+transform: translateX(-300%);
+}
+100% {
+opacity: 1;
+}
+}
+.card-menu {
+flex: 1;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+}
+.card-menu h4,
+.card-menu p {
+margin: 0;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+}
+.card-menu h4 {
+font-weight: 500;
+font-size: 17px;
+margin-bottom: 3px;
+}
+.card-menu p {
+font-weight: 300;
+font-size: 14px;
+}
+.card-price {
+margin: 0;
+font-size: 15px;
+font-weight: 700;
+color: #353535;
+padding-left: 8px;
+margin-right: 32px;
+}
+.card-validation {
+background: $tertiary-color;
+margin: -15px -80px -15px -15px;
+width: 64px;
+height: 73px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: 0.5s;
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+}
+// Animation check menu
+.icon-validation {
+height: 22px;
+width: 22px;
+background: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+}
+.icon-validation svg {
+font-weight: 900;
+fill: $tertiary-color;
+height: 16px;
+width: 16px;
+}
+@media (min-width: 1024px) {
+.menu .section__title {
+justify-content: center;
+gap: 30px;
+margin-right: auto;
+}
+.section__title,
+.starters__section,
+.dishes__section,
+.desserts__section {
+max-width: 634px;
+margin: auto;
+}
+}

@@ -1,0 +1,69 @@
+// Functioning
+.functioning h3 {
+font-size: 24px;
+font-weight: 700;
+}
+.functioning-card {
+display: flex;
+flex-direction: row-reverse;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+}
+.functioning-card .card-content {
+display: flex;
+flex-direction: row-reverse;
+justify-content: start;
+align-items: center;
+gap: 20px;
+background: $background-color;
+border-radius: 20px;
+width: 100%;
+height: 72px;
+padding-left: 30px;
+z-index: -1;
+box-shadow: 0px 4px 15px 0px $shadow-color;
+}
+.functioning-card .card-content h4 {
+font-size: 16px;
+font-weight: 500;
+}
+.functioning-card .card-content svg {
+height: 18px;
+width: 18px;
+fill: #7e7e7e;
+}
+.functioning-card .card-content .svg__store {
+fill: $primary-color;
+}
+.functioning-card p {
+display: flex;
+align-items: center;
+justify-content: center;
+background: $primary-color;
+min-width: 24px;
+min-height: 24px;
+font-size: 14px;
+color: #fff;
+border-radius: 50%;
+margin-right: -12px;
+}
+@media (min-width: 1024px) {
+.functioning {
+padding: 50px 180px;
+}
+.functioning-cards {
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+padding-right: 50px;
+}
+.functioning-cards .functioning-card {
+width: 32%;
+justify-content: flex-end;
+margin: 0;
+}
+.functioning-cards .functioning-card .card-content {
+width: 100%;
+}
+}

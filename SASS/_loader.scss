@@ -1,0 +1,46 @@
+/ Loader
+.loading-spinner {
+height: 100vh;
+width: 100vw;
+background-color: $background-color;
+position: fixed;
+@include flex-center;
+animation: 3s ease forwards hide-animation;
+}
+.loading-spinner__ball {
+height: 2rem;
+width: 2rem;
+border-radius: 50%;
+position: absolute;
+animation: 1.25s ease-in-out both 2 circle;
+}
+.loading-spinner__ball--primary {
+background-color: $primary-color;
+}
+.loading-spinner__ball--secondary {
+background-color: $secondary-color;
+animation-delay: 0.25s;
+}
+.loading-spinner__ball--tertiary {
+background-color: $tertiary-color;
+animation-delay: 0.5s;
+}
+// Keyframes
+@keyframes hide-animation {
+0%, 99% {
+opacity: 1;
+z-index: 1000;
+}
+100% {
+opacity: 0;
+z-index: -10;
+}
+}
+@keyframes circle {
+0% {
+transform: rotate(0deg) translate(-100px);
+}
+80%, 100% {
+transform: rotate(360deg) translate(-100px);
+}
+}
